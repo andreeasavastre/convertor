@@ -11,7 +11,7 @@
 using namespace std;
 
 void densitate() {
-    float valoare = 0;
+    /*float valoare = 0;
     float aux = 0;
     float result = 0;
     int primaUnitate = 0;
@@ -99,8 +99,9 @@ void densitate() {
             break;
     }
     cout << "resultatul este: " << result << "\n";
+     */
 }
 
-void afisareUnitatiLungime() {
+/*void afisareUnitatiLungime() {
     cout << "1. cm\n2. ft\n3. in\n4. km\n5. m\n6. mi\n7. mm\n8. nmi\n9. yd\n";
-}
+}*/

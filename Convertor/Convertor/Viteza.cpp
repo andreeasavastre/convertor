@@ -171,6 +171,6 @@ void viteza() {
     cout << "resultatul este: " << result << "\n";
 }
 
-void afisareUnitatiVolum() {
+void afisareUnitatiViteza() {
     cout << "1. cmPerMin\n2. cmPerSec\n3. fph\n4. fps\n5. ftPerMin\n6. ips\n7. kmPerHour\n8. kmPerMin\n9. kmPerSec\n10. mPerHour\n11. mPerMin\n12. milePerSec\n13. milePerMin\n14. milePerHour\n15. nmilePerHour\n16. ydPerHour\n17. ydPerMin\n18. ydPerSec\n19. meterPerSec\n";
 }

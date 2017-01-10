@@ -10,7 +10,7 @@
 #include <iostream>
 using namespace std;
 
-void Energie() {
+void energie() {
     float valoare = 0;
     float aux = 0;
     float result = 0;

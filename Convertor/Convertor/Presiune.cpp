@@ -10,7 +10,7 @@
 #include <iostream>
 using namespace std;
 
-void Presiune() {
+void presiune() {
     float valoare = 0;
     float aux = 0;
     float result = 0;
