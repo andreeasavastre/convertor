@@ -84,6 +84,7 @@ void masa() {
         default:
             break;
     }
+     std::cout.setf(std::ios::fixed);
     cout << "resultatul este: " << result << "\n";
 }
 

@@ -10,6 +10,6 @@
 #define Densitate_hpp
 
 #include <stdio.h>
-void densitate();
 
+void densitate();
 #endif /* Densitate_hpp */

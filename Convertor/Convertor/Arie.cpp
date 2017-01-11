@@ -104,6 +104,8 @@ void arie() {
         default:
             break;
     }
+    // std::cout.precision(2);
+    std::cout.setf(std::ios::fixed);
     cout << "resultatul este: " << result << "\n";
 }
 

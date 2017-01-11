@@ -17,6 +17,7 @@
 #include "Energie.hpp"
 #include "Presiune.hpp"
 #include "Densitate.hpp"
+#include "Consum combustibil.hpp"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -33,6 +34,7 @@ int main(int argc, const char * argv[]) {
     cout << "8. Energie\n";
     cout << "9. Presiune\n";
     cout << "10. Densitate\n";
+    cout << "11. Consum combustibil\n";
     int optiune = 0;
     cin >> optiune;
     switch (optiune) {
@@ -65,6 +67,9 @@ int main(int argc, const char * argv[]) {
             break;
         case 10:
             densitate();
+            break;
+        case 11:
+            consumCombustibil();
             break;
         default:
             break;

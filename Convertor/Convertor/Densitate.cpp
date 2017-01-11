@@ -11,97 +11,119 @@
 using namespace std;
 
 void densitate() {
-    /*float valoare = 0;
+    float valoare = 0;
     float aux = 0;
     float result = 0;
     int primaUnitate = 0;
     int resultatUnitate = 0;
     
-    // constante unitati masura (unitate de baza mm)
-    const float cm = 10;
-    const float ft = 304.8;
-    const float in = 25.4;
-    const float km = 1000000;
-    const float m = 1000;
-    const float mi = 1609344;
-    const float nmi = 1852000;
-    const float yd = 914.4002494;
-    cout << "conversie lungime\n";
+    // constante unitati masura (unitate de baza kg/cmc)
+    const float gpercmc = 0.001;
+    const float gperl = 0.000001;
+    const float kgperl = 0.001;
+    const float kgpermc = 0.000001;
+    const float lbperftc = 0.00001601794009290405;
+    const float lbperin = 0.02767989858;
+    const float lbpergal = 0.0001198264273;
+    const float mgpercmc = 0.000001;
+     const float ozpergal = 0.000007489150094;
+     const float ozperftc = 0.000001001153961;
+     const float tpermc = 0.001;
+    cout << "conversie densitate\n";
     cout << "valoare?\n";
     cin >> valoare;
     cout << "unitatea initiala\n";
-    void afisareUnitatiLungime();
-    afisareUnitatiLungime();
+    void afisareUnitatiDensitate();
+    afisareUnitatiDensitate();
     cin >> primaUnitate;
     switch (primaUnitate) {
         case 1:
-            aux = (float)valoare * cm;
+            aux = (float)valoare * gpercmc;
             break;
         case 2:
-            aux = (float)valoare * ft;
+            aux = (float)valoare * gperl;
             break;
         case 3:
-            aux = (float)valoare * in;
+            aux = (float)valoare * kgperl;
             break;
         case 4:
-            aux = (float)valoare * km;
+            aux = (float)valoare * kgpermc;
             break;
         case 5:
-            aux = (float)valoare * m;
+            aux = (float)valoare * lbperftc;
             break;
         case 6:
-            aux = (float)valoare * mi;
+            aux = (float)valoare * lbperin;
             break;
         case 7:
-            aux = valoare;
+            aux = (float)valoare * lbpergal;
             break;
         case 8:
-            aux = (float)valoare * nmi;
+            aux = (float)valoare * mgpercmc;
             break;
         case 9:
-            aux = (float)valoare * yd;
+            aux = (float)valoare * ozpergal;
             break;
+     case 10:
+     aux = (float)valoare * ozperftc;
+     break;
+     case 11:
+     aux = (float)valoare * tpermc;
+     break;
+     case 12:
+     aux = valoare;
+     break;
         default:
             break;
     }
     cout << "unitatea dorita\n";
-    afisareUnitatiLungime();
+    afisareUnitatiDensitate();
     cin >> resultatUnitate;
     switch (resultatUnitate) {
         case 1:
-            result = (float)aux / cm;
+            result = (float)aux / gpercmc;
             break;
         case 2:
-            result = (float)aux / ft;
+            result = (float)aux / gperl;
             break;
         case 3:
-            result = (float)aux / in;
+            result = (float)aux / kgperl;
             break;
         case 4:
-            result = (float)aux / km;
+            result = (float)aux / kgpermc;
             break;
         case 5:
-            result = (float)aux / m;
+            result = (float)aux / lbperftc;
             break;
         case 6:
-            result = (float)aux / mi;
+            result = (float)aux / lbperin;
             break;
         case 7:
-            result = aux;
+            result = (float)aux / lbpergal;
             break;
         case 8:
-            result = (float)aux / nmi;
+            result = (float)aux / mgpercmc;
             break;
         case 9:
-            result = (float)aux / yd;
+            result = (float)aux / ozpergal;
             break;
+     case 10:
+     result = (float)aux / ozperftc;
+     break;
+     case 11:
+     result = (float)aux / tpermc;
+     break;
+     case 12:
+     result = aux;
+     break;
         default:
             break;
     }
+      std::cout.setf(std::ios::fixed);
     cout << "resultatul este: " << result << "\n";
-     */
+    
 }
 
-/*void afisareUnitatiLungime() {
-    cout << "1. cm\n2. ft\n3. in\n4. km\n5. m\n6. mi\n7. mm\n8. nmi\n9. yd\n";
-}*/
+void afisareUnitatiDensitate() {
+    cout << "1. g/cmc\n2. g/l\n3. kg/l\n4. kg/mc\n5. lb/ft\n6. lb/in\n7. lb/gal\n8. nmg/cmc\n9. oz/gal\n10. oz/ft\n11. t/mc\n12. kg/cmc\n";
+}
