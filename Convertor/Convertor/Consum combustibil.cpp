@@ -18,7 +18,7 @@ void consumCombustibil(int language) {
     int resultatUnitate = 0;
     
     // constante unitati masura (unitate de baza l/100km)
-    const float millespergal = 235.215;
+    // const float millespergal = 235.215;
     const float kmperl = 100;
     if (language == 0){
         cout << "conversie consum Combustibil\n";
@@ -40,10 +40,10 @@ void consumCombustibil(int language) {
     cin >> primaUnitate;
     switch (primaUnitate) {
         case 1:
-            aux = (float)valoare * millespergal;
+            aux = (float) 454.609 / (1.609344 * valoare);
             break;
         case 2:
-            aux = (float)valoare * kmperl;
+            aux = (float) 100 / aux;
             break;
         case 3:
             aux = valoare;
@@ -61,10 +61,10 @@ void consumCombustibil(int language) {
     cin >> resultatUnitate;
     switch (resultatUnitate) {
         case 1:
-            result = (float)aux / millespergal;
+            result = (float) (454.609) / (1.609344 * aux);
             break;
         case 2:
-            result = (float)aux / kmperl;
+            result = (float) 100 / aux;
             break;
         case 3:
             result = aux;

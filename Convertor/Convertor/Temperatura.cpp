@@ -18,9 +18,9 @@ void temperatura(int language) {
     int resultatUnitate = 0;
     
     // constante unitati masura (unitate de baza grade Celsius)
-    const float gradeFahrenheit  = -17.22222222;
-    const float gradeKelvin = -272.15;
-    const float gradeRankine = -272.5944444;
+    // const float gradeFahrenheit  = -17.22222222;
+    // const float gradeKelvin = -272.15;
+    // const float gradeRankine = -272.5944444;
     if (language == 0){
         cout << "conversie temperatura\n";
         cout << "valoare?\n";

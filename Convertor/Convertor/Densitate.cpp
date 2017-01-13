@@ -146,5 +146,5 @@ void densitate(int language) {
 }
 
 void afisareUnitatiDensitate() {
-    cout << "1. g/cmc\n2. g/l\n3. kg/l\n4. kg/mc\n5. lb/ft\n6. lb/in\n7. lb/gal\n8. nmg/cmc\n9. oz/gal\n10. oz/ft\n11. t/mc\n12. kg/cmc\n";
+    cout << "1. g/cmc\n2. g/l\n3. kg/l\n4. kg/mc\n5. lb/ft\n6. lb/in\n7. lb/gal\n8. mg/cmc\n9. oz/gal\n10. oz/ft\n11. t/mc\n12. kg/cmc\n";
 }
