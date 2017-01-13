@@ -10,7 +10,7 @@
 #include "Lungime.hpp"
 using namespace std;
 
-void lungime() {
+void lungime(int language) {
     float valoare = 0;
     float aux = 0;
     float result = 0;
@@ -26,10 +26,20 @@ void lungime() {
     const float mi = 1609344;
     const float nmi = 1852000;
     const float yd = 914.4002494;
-    cout << "conversie lungime\n";
-    cout << "valoare?\n";
+    if(language == 0){
+        cout << "conversie lungime\n";
+        cout << "valoare?\n";}
+    else {
+        cout << "lenght conversion\n";
+        cout << "value?\n";
+    }
     cin >> valoare;
-    cout << "unitatea initiala\n";
+    if(language == 0){
+        cout << "unitatea initiala\n";
+    }
+    else{
+        cout << "initial unit\n";
+    }
     void afisareUnitatiLungime();
     afisareUnitatiLungime();
     cin >> primaUnitate;
@@ -64,7 +74,12 @@ void lungime() {
         default:
             break;
     }
-    cout << "unitatea dorita\n";
+    if(language == 0){
+        cout << "unitatea dorita\n";
+    }
+    else{
+        cout << "wanted unit\n";
+    }
     afisareUnitatiLungime();
     cin >> resultatUnitate;
     switch (resultatUnitate) {
@@ -98,8 +113,13 @@ void lungime() {
         default:
             break;
     }
-     std::cout.setf(std::ios::fixed);
-    cout << "resultatul este: " << result << "\n";
+    std::cout.setf(std::ios::fixed);
+    if(language == 0){
+        cout << "resultatul este: " << result << "\n";
+    }
+    else{
+        cout << "the result is: " << result << "\n";
+    }
 }
 
 void afisareUnitatiLungime() {

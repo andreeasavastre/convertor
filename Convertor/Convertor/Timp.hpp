@@ -11,5 +11,5 @@
 
 #include <stdio.h>
 
-void timp();
+void timp(int language);
 #endif /* Timp_hpp */

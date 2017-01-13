@@ -10,7 +10,7 @@
 #include <iostream>
 using namespace std;
 
-void energie() {
+void energie(int language) {
     float valoare = 0;
     float aux = 0;
     float result = 0;
@@ -26,10 +26,21 @@ void energie() {
     const float kj = 0.23884589662749592;
     const float kwh = 859.8452278589854;
     const float tep = 10000000;
-    cout << "conversie energie\n";
-    cout << "valoare?\n";
+    if (language == 0){
+        cout << "conversie energie\n";
+        cout << "valoare?\n";
+    }
+    else {
+        cout << "energy conversion\n";
+        cout << "value?\n";
+    }
     cin >> valoare;
-    cout << "unitatea initiala\n";
+    if (language == 0){
+        cout << "unitatea initiala\n";
+    }
+    else {
+        cout << "initial unit\n";
+    }
     void afisareUnitatiEnergie();
     afisareUnitatiEnergie();
     cin >> primaUnitate;
@@ -64,7 +75,12 @@ void energie() {
         default:
             break;
     }
-    cout << "unitatea dorita\n";
+    if (language == 0){
+        cout << "unitatea dorita\n";
+    }
+    else {
+        cout << " wanted unit\n";
+    }
     afisareUnitatiEnergie();
     cin >> resultatUnitate;
     switch (resultatUnitate) {
@@ -98,8 +114,13 @@ void energie() {
         default:
             break;
     }
-     std::cout.setf(std::ios::fixed);
-    cout << "resultatul este: " << result << "\n";
+    std::cout.setf(std::ios::fixed);
+    if (language == 0){
+        cout << "resultatul este: " << result << "\n";
+    }
+    else {
+        cout << "the result is: " << result << "\n";
+    }
 }
 
 void afisareUnitatiEnergie() {

@@ -11,5 +11,5 @@
 
 #include <stdio.h>
 
-void densitate();
+void densitate(int language);
 #endif /* Densitate_hpp */

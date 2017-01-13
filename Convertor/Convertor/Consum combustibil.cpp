@@ -10,7 +10,7 @@
 #include <iostream>
 using namespace std;
 
-void consumCombustibil() {
+void consumCombustibil(int language) {
     float valoare = 0;
     float aux = 0;
     float result = 0;
@@ -20,10 +20,21 @@ void consumCombustibil() {
     // constante unitati masura (unitate de baza l/100km)
     const float millespergal = 235.215;
     const float kmperl = 100;
-    cout << "conversie consum Combustibil\n";
-    cout << "valoare?\n";
+    if (language == 0){
+        cout << "conversie consum Combustibil\n";
+        cout << "valoare?\n";
+    }
+    else {
+        cout << "fuel economy conversion\n";
+        cout << "value?\n";
+    }
     cin >> valoare;
-    cout << "unitatea initiala\n";
+    if (language == 0){
+        cout << "unitatea initiala\n";
+    }
+    else {
+        cout << "initial unit\n";
+    }
     void afisareUnitatiConsumCombustibil();
     afisareUnitatiConsumCombustibil();
     cin >> primaUnitate;
@@ -40,7 +51,12 @@ void consumCombustibil() {
         default:
             break;
     }
-    cout << "unitatea dorita\n";
+    if ( language == 0){
+        cout << "unitatea dorita\n";
+    }
+    else {
+        cout << "wanted unit\n";
+    }
     afisareUnitatiConsumCombustibil();
     cin >> resultatUnitate;
     switch (resultatUnitate) {
@@ -57,7 +73,12 @@ void consumCombustibil() {
             break;
     }
     std::cout.setf(std::ios::fixed);
-    cout << "resultatul este: " << result << "\n";
+        if (language == 0){
+            cout << "resultatul este: " << result << "\n";
+        }
+        else{
+            cout << "the result is: " << result << "\n";
+        }
 }
 
 void afisareUnitatiConsumCombustibil() {

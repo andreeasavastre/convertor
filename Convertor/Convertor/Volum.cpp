@@ -10,7 +10,7 @@
 #include <iostream>
 using namespace std;
 
-void volum() {
+void volum(int language) {
     float valoare = 0;
     float aux = 0;
     float result = 0;
@@ -28,10 +28,21 @@ void volum() {
     const float ml = 0.001;
     const float m = 1000;
     const float yd = 764.56;
-    cout << "conversie volum\n";
-    cout << "valoare?\n";
+    if (language == 0){
+        cout << "conversie volum\n";
+        cout << "valoare?\n";
+    }
+    else{
+        cout << "volum conversion\n";
+        cout << "value?\n";
+    }
     cin >> valoare;
-    cout << "unitatea initiala\n";
+    if (language == 0){
+        cout << "unitatea initiala\n";
+    }
+    else{
+        cout << "initial unit\n";
+    }
     void afisareUnitatiVolum();
     afisareUnitatiVolum();
     cin >> primaUnitate;
@@ -72,7 +83,12 @@ void volum() {
         default:
             break;
     }
-    cout << "unitatea dorita\n";
+    if (language == 0){
+        cout << "unitatea dorita\n";
+    }
+    else{
+        cout << "wanted unit\n";
+    }
     afisareUnitatiVolum();
     cin >> resultatUnitate;
     switch (resultatUnitate) {
@@ -112,8 +128,13 @@ void volum() {
         default:
             break;
     }
-     std::cout.setf(std::ios::fixed);
-    cout << "resultatul este: " << result << "\n";
+    std::cout.setf(std::ios::fixed);
+    if (language == 0){
+        cout << "resultatul este: " << result << "\n";
+    }
+    else{
+        cout << "the result is: " << result << "\n";
+    }
 }
 
 void afisareUnitatiVolum() {

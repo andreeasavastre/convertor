@@ -11,5 +11,5 @@
 
 #include <stdio.h>
 
-void consumCombustibil();
+void consumCombustibil(int language);
 #endif /* Consum_combustibil_hpp */

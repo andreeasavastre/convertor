@@ -10,7 +10,7 @@
 #include <iostream>
 using namespace std;
 
-void masa() {
+void masa(int language) {
     float valoare = 0;
     float aux = 0;
     float result = 0;
@@ -24,10 +24,21 @@ void masa() {
     const float oz = 0.0311035;
     const float slug = 14.593903;
     const float t = 1000;
-    cout << "conversie masa\n";
-    cout << "valoare?\n";
+    if (language == 0){
+        cout << "conversie masa\n";
+        cout << "valoare?\n";
+    }
+    else {
+        cout << "mass conversion\n";
+        cout << "value?\n";
+    }
     cin >> valoare;
-    cout << "unitatea initiala\n";
+    if (language == 0){
+        cout << "unitatea initiala\n";
+    }
+    else {
+        cout << "initial unit\n";
+    }
     void afisareUnitatiMasa();
     afisareUnitatiMasa();
     cin >> primaUnitate;
@@ -56,7 +67,12 @@ void masa() {
         default:
             break;
     }
-    cout << "unitatea dorita\n";
+    if (language == 0){
+        cout << "unitatea dorita\n";
+    }
+    else {
+        cout << "wanted unit\n";
+    }
     afisareUnitatiMasa();
     cin >> resultatUnitate;
     switch (resultatUnitate) {
@@ -84,8 +100,13 @@ void masa() {
         default:
             break;
     }
-     std::cout.setf(std::ios::fixed);
+    std::cout.setf(std::ios::fixed);
+    if (language == 0){
     cout << "resultatul este: " << result << "\n";
+    }
+    else {
+        cout << "the result is: " << result << "\n";
+    }
 }
 
 void afisareUnitatiMasa() {

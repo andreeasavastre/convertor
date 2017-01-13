@@ -11,5 +11,5 @@
 
 #include <stdio.h>
 
-void presiune();
+void presiune(int language);
 #endif /* Presiune_hpp */

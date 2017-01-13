@@ -10,7 +10,7 @@
 #include <iostream>
 using namespace std;
 
-void arie() {
+void arie(int language) {
     float valoare = 0;
     float aux = 0;
     float result = 0;
@@ -27,10 +27,21 @@ void arie() {
     const float km = 1000000;
     const float mm = 0.000001;
     const float yd = 0.836127816;
-    cout << "conversie arie\n";
-    cout << "valoare?\n";
+    if (language == 0){
+        cout << "conversie arie\n";
+        cout << "valoare?\n";
+    }
+    else {
+        cout << "aria conversion\n";
+        cout << "value?\n";
+    }
     cin >> valoare;
-    cout << "unitatea initiala\n";
+    if (language == 0){
+     cout << "unitatea initiala\n";
+    }
+    else {
+        cout << "initial unit\n";
+    }
     void afisareUnitatiArie();
     afisareUnitatiArie();
     cin >> primaUnitate;
@@ -67,7 +78,12 @@ void arie() {
         default:
             break;
     }
-    cout << "unitatea dorita\n";
+    if (language == 0 ){
+        cout << "unitatea dorita\n";
+    }
+    else {
+        cout << "wanted unit\n";
+    }
     afisareUnitatiArie();
     cin >> resultatUnitate;
     switch (resultatUnitate) {
@@ -106,7 +122,12 @@ void arie() {
     }
     // std::cout.precision(2);
     std::cout.setf(std::ios::fixed);
-    cout << "resultatul este: " << result << "\n";
+    if (language == 0){
+        cout << "resultatul este: " << result << "\n";
+    }
+    else{
+        cout << "the result is: " << result << "\n";
+    }
 }
 
 void afisareUnitatiArie() {

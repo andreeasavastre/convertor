@@ -10,7 +10,7 @@
 #include <iostream>
 using namespace std;
 
-void timp() {
+void timp(int language) {
     float valoare = 0;
     float aux = 0;
     float result = 0;
@@ -27,10 +27,21 @@ void timp() {
     const float week = 168;
     const float year = 8760;
     const float ma = 87537777777.77777;
-    cout << "conversie timp\n";
-    cout << "valoare?\n";
+    if (language == 0){
+        cout << "conversie timp\n";
+        cout << "valoare?\n";
+    }
+    else{
+        cout << "time conversion\n";
+        cout << "value?\n";
+    }
     cin >> valoare;
-    cout << "unitatea initiala\n";
+    if (language == 0){
+        cout << "unitatea initiala\n";
+    }
+    else{
+        cout << "initial unit\n";
+    }
     void afisareUnitatiTimp();
     afisareUnitatiTimp();
     cin >> primaUnitate;
@@ -68,7 +79,12 @@ void timp() {
         default:
             break;
     }
-    cout << "unitatea dorita\n";
+    if (language == 0){
+        cout << "unitatea dorita\n";
+    }
+    else{
+        cout << "wanted unit\n";
+    }
     afisareUnitatiTimp();
     cin >> resultatUnitate;
     switch (resultatUnitate) {
@@ -105,8 +121,13 @@ void timp() {
         default:
             break;
     }
-     std::cout.setf(std::ios::fixed);
-    cout << "resultatul este: " << result << "\n";
+    std::cout.setf(std::ios::fixed);
+    if (language == 0){
+        cout << "resultatul este: " << result << "\n";
+    }
+    else{
+        cout << "the result is: " << result << "\n";
+    }
 }
 
 void afisareUnitatiTimp() {

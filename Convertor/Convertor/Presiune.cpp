@@ -10,7 +10,7 @@
 #include <iostream>
 using namespace std;
 
-void presiune() {
+void presiune(int language) {
     float valoare = 0;
     float aux = 0;
     float result = 0;
@@ -21,10 +21,21 @@ void presiune() {
     const float bar = 14.213698297557126;
     const float atm = 14.695988486842547;
     const float mmHg = 0.01933677470461073;
-    cout << "conversie presiune\n";
-    cout << "valoare?\n";
+    if (language == 0){
+        cout << "conversie presiune\n";
+        cout << "valoare?\n";
+    }
+    else {
+        cout << "pressure conversion\n";
+        cout << "value?\n";
+    }
     cin >> valoare;
-    cout << "unitatea initiala\n";
+    if (language == 0){
+        cout << "unitatea initiala\n";
+    }
+    else {
+        cout << "initial unit\n";
+    }
     void afisareUnitatiPresiune();
     afisareUnitatiPresiune();
     cin >> primaUnitate;
@@ -44,7 +55,12 @@ void presiune() {
         default:
             break;
     }
-    cout << "unitatea dorita\n";
+    if (language == 0){
+        cout << "unitatea dorita\n";
+    }
+    else {
+        cout << "wanted unit\n";
+    }
     afisareUnitatiPresiune();
     cin >> resultatUnitate;
     switch (resultatUnitate) {
@@ -63,8 +79,13 @@ void presiune() {
         default:
             break;
     }
-     std::cout.setf(std::ios::fixed);
-    cout << "resultatul este: " << result << "\n";
+    std::cout.setf(std::ios::fixed);
+    if (language == 0){
+        cout << "resultatul este: " << result << "\n";
+    }
+    else {
+        cout << "the result is: " << result << "\n";
+    }
 }
 
 void afisareUnitatiPresiune() {

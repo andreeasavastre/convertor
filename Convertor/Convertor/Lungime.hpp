@@ -11,5 +11,5 @@
 
 #include <stdio.h>
 
-void lungime();
+void lungime(int language);
 #endif /* Lungime_hpp */

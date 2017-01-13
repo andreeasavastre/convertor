@@ -11,5 +11,5 @@
 
 #include <stdio.h>
 
-void masa();
+void masa(int language);
 #endif /* Masa_hpp */

@@ -11,5 +11,5 @@
 
 #include <stdio.h>
 
-void volum();
+void volum(int language);
 #endif /* Volum_hpp */

@@ -11,5 +11,5 @@
 
 #include <stdio.h>
 
-void arie();
+void arie(int language);
 #endif /* Arie_hpp */

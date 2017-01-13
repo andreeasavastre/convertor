@@ -11,5 +11,5 @@
 
 #include <stdio.h>
 
-void viteza();
+void viteza(int language);
 #endif /* Viteza_hpp */

@@ -11,5 +11,5 @@
 
 #include <stdio.h>
 
-void energie();
+void energie(int language);
 #endif /* Energie_hpp */

@@ -11,5 +11,5 @@
 
 #include <stdio.h>
 
-void temperatura();
+void temperatura(int language);
 #endif /* Temperatura_hpp */
