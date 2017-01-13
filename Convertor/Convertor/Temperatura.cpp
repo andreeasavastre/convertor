@@ -41,13 +41,13 @@ void temperatura(int language) {
     cin >> primaUnitate;
     switch (primaUnitate) {
         case 1:
-            aux = (float)valoare * gradeFahrenheit;
+            aux = (float)(valoare - 32) * 0.5556 ;
             break;
         case 2:
-            aux = (float)valoare * gradeKelvin;
+            aux = (float)valoare - 273.15;
             break;
         case 3:
-            aux = (float)valoare * gradeRankine;
+            aux = (float)(valoare - 491.67) / 1.8;
             break;
         case 4:
             aux = valoare;
@@ -65,13 +65,13 @@ void temperatura(int language) {
     cin >> resultatUnitate;
     switch (resultatUnitate) {
         case 1:
-            result = (float)aux / gradeFahrenheit;
+            result = (float)(aux * 1.8) + 32;
             break;
         case 2:
-            result = (float)aux / gradeKelvin;
+            result = (float)aux + 273.15;
             break;
         case 3:
-            result = (float)aux /  gradeRankine;
+            result = (float)aux * 1.8 + 491.67;
             break;
         case 4:
             result = aux;
